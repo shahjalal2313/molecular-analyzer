@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tutorials/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>User Guide - Molecular Analyzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#molecular-analyzer-user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Molecular Analyzer" class="md-header__button md-logo" aria-label="Molecular Analyzer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Molecular Analyzer
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Molecular Analyzer" class="md-nav__button md-logo" aria-label="Molecular Analyzer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Molecular Analyzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      First Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-input-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Input Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Interface Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Interface Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-content-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Content Area
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Analysis Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Analysis Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-molecule-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single Molecule Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Molecule Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformational-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformational Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⭐ Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⭐ Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-visualization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Visualization Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tips &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Tips &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization Best Practices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformational-analysis-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformational Analysis Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      📞 Support
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      First Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-input-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Input Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Interface Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Interface Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-content-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Content Area
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Analysis Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Analysis Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-molecule-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single Molecule Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Molecule Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformational-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformational Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⭐ Advanced Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⭐ Advanced Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-visualization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Visualization Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tips &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Tips &amp; Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization Best Practices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformational-analysis-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformational Analysis Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      📞 Support
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="molecular-analyzer-user-guide">📖 Molecular Analyzer User Guide</h1>
+<p>Welcome to the comprehensive user guide for Molecular Analyzer! This guide will help you get the most out of the platform's molecular analysis and visualization capabilities.</p>
+<h2 id="table-of-contents">🎯 Table of Contents</h2>
+<ol>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#interface-overview">Interface Overview</a></li>
+<li><a href="#analysis-types">Analysis Types</a></li>
+<li><a href="#advanced-features">Advanced Features</a></li>
+<li><a href="#tips--best-practices">Tips &amp; Best Practices</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+<h2 id="getting-started">🚀 Getting Started</h2>
+<h3 id="first-steps">First Steps</h3>
+<ol>
+<li><strong>Launch the application</strong> using <code>streamlit run app/streamlit_app.py</code></li>
+<li><strong>Open your browser</strong> to the provided local URL (usually <code>http://localhost:8501</code>)</li>
+<li><strong>Choose your analysis type</strong> from the sidebar navigation menu</li>
+</ol>
+<h3 id="supported-input-formats">Supported Input Formats</h3>
+<ul>
+<li><strong>SMILES strings</strong> (e.g., <code>CCO</code> for ethanol)</li>
+<li><strong>CSV files</strong> with SMILES column for batch processing</li>
+<li><strong>Direct text input</strong> for multiple molecules</li>
+</ul>
+<h2 id="interface-overview">🖥️ Interface Overview</h2>
+<h3 id="navigation-menu">Navigation Menu</h3>
+<p>The sidebar contains the main navigation options:</p>
+<ul>
+<li><strong>Single Molecule Analysis</strong> - Analyze one molecule at a time</li>
+<li><strong>Batch Analysis</strong> - Process multiple molecules simultaneously</li>
+<li><strong>Molecule Comparison</strong> - Compare two or more molecules</li>
+<li><strong>Conformational Analysis</strong> - Study molecular flexibility</li>
+<li><strong>Advanced Analysis</strong> - Drug-likeness and property optimization</li>
+<li><strong>System Info</strong> - Technical information and system status</li>
+</ul>
+<h3 id="main-content-area">Main Content Area</h3>
+<p>The main area displays:
+- Input controls for molecular data
+- Analysis results and visualizations
+- Interactive charts and 3D models
+- Export options for data and visualizations</p>
+<h2 id="analysis-types">🔬 Analysis Types</h2>
+<h3 id="single-molecule-analysis">Single Molecule Analysis</h3>
+<p><strong>Purpose</strong>: Comprehensive analysis of individual molecules</p>
+<p><strong>How to Use</strong>:
+1. Enter a SMILES string in the input field
+2. Click "Analyze Molecule"
+3. Review the calculated properties
+4. Explore 2D and 3D visualizations</p>
+<p><strong>Key Features</strong>:
+- Molecular properties (MW, LogP, TPSA, etc.)
+- 2D molecular structure
+- Interactive 3D visualization
+- Drug-likeness assessment</p>
+<h3 id="batch-analysis">Batch Analysis</h3>
+<p><strong>Purpose</strong>: High-throughput processing of molecular datasets</p>
+<p><strong>How to Use</strong>:
+1. Upload a CSV file with SMILES column
+2. Or enter multiple SMILES (one per line)
+3. Click "Process Batch"
+4. Download results as CSV</p>
+<p><strong>Key Features</strong>:
+- Process up to 1000 molecules
+- Statistical summaries
+- Property distributions
+- Batch export capabilities</p>
+<h3 id="molecule-comparison">Molecule Comparison</h3>
+<p><strong>Purpose</strong>: Side-by-side analysis of multiple molecules</p>
+<p><strong>How to Use</strong>:
+1. Enter 2-4 SMILES strings
+2. Assign names to each molecule
+3. Click "Compare Molecules"
+4. Analyze differences and similarities</p>
+<p><strong>Key Features</strong>:
+- Property comparison tables
+- Similarity calculations
+- Overlay visualizations
+- Radar charts for property profiles</p>
+<h3 id="conformational-analysis">Conformational Analysis</h3>
+<p><strong>Purpose</strong>: Study molecular flexibility and conformational changes</p>
+<p><strong>How to Use</strong>:
+1. Enter a SMILES string
+2. Set number of conformers (1-50)
+3. Choose optimization level
+4. Enable "Show Conformational Changes" for advanced visualization</p>
+<p><strong>Key Features</strong>:
+- Multiple conformer generation
+- Energy analysis and plots
+- 3D conformer visualization
+- <strong>Conformational change labeling</strong> with color-coded highlights
+- Flexibility hotspot identification</p>
+<h3 id="advanced-analysis">Advanced Analysis</h3>
+<p><strong>Purpose</strong>: Drug-likeness assessment and molecular optimization</p>
+<p><strong>How to Use</strong>:
+1. Enter a SMILES string
+2. Click "Perform Advanced Analysis"
+3. Review drug-likeness metrics
+4. Explore optimization suggestions</p>
+<p><strong>Key Features</strong>:
+- Lipinski's Rule of Five
+- Veber's Rule compliance
+- ADMET predictions
+- Optimization recommendations</p>
+<h2 id="advanced-features">⭐ Advanced Features</h2>
+<h3 id="3d-visualization-options">3D Visualization Options</h3>
+<p><strong>Visualization Styles</strong>:
+- <strong>Ball and Stick</strong> - Standard molecular representation
+- <strong>Space-filling</strong> - Van der Waals surface representation
+- <strong>Wireframe</strong> - Simplified bond-only view</p>
+<p><strong>Bond Type Visualization</strong>:
+- 🔵 <strong>Blue bonds</strong> - Triple bonds (C≡C, C≡N)
+- 🟢 <strong>Green bonds</strong> - Double bonds (C=C, C=O)
+- 🟣 <strong>Purple bonds</strong> - Aromatic bonds (benzene rings)
+- <strong>Dark gray bonds</strong> - Single bonds (C-C, C-H)</p>
+<p><strong>Conformational Change Features</strong>:
+- <strong>Shortened hydrogen bonds</strong> for better visual proportion
+- <strong>Color-coded change highlighting</strong>:
+  - 🔴 <strong>Red</strong>: Major changes (&gt;2.0 Å displacement)
+  - 🟠 <strong>Orange</strong>: Minor changes (1.0-2.0 Å displacement)
+- <strong>Interactive conformer comparison</strong>
+- <strong>Real-time change analysis</strong></p>
+<h3 id="export-options">Export Options</h3>
+<p><strong>Available Formats</strong>:
+- <strong>JSON</strong> - Complete analysis data
+- <strong>CSV</strong> - Tabular property data
+- <strong>HTML</strong> - Interactive visualizations
+- <strong>PNG</strong> - Static images</p>
+<p><strong>What You Can Export</strong>:
+- Molecular properties
+- Analysis results
+- 3D visualizations
+- Comparison data</p>
+<h3 id="state-management">State Management</h3>
+<p>The application automatically saves:
+- Analysis results across sessions
+- Visualization settings
+- Input history
+- Cached calculations</p>
+<h2 id="tips-best-practices">💡 Tips &amp; Best Practices</h2>
+<h3 id="input-preparation">Input Preparation</h3>
+<ul>
+<li><strong>Validate SMILES</strong> before analysis using online checkers</li>
+<li><strong>Use canonical SMILES</strong> for consistency</li>
+<li><strong>Clean your data</strong> before batch processing</li>
+</ul>
+<h3 id="performance-optimization">Performance Optimization</h3>
+<ul>
+<li><strong>Limit conformers</strong> to 20-30 for complex molecules</li>
+<li><strong>Use batch processing</strong> for multiple molecules</li>
+<li><strong>Clear cache</strong> if memory usage becomes high</li>
+</ul>
+<h3 id="visualization-best-practices">Visualization Best Practices</h3>
+<ul>
+<li><strong>Enable conformational changes</strong> for flexibility studies</li>
+<li><strong>Use appropriate visualization styles</strong> for your analysis purpose</li>
+<li><strong>Save visualizations</strong> before clearing results</li>
+</ul>
+<h3 id="conformational-analysis-tips">Conformational Analysis Tips</h3>
+<ul>
+<li><strong>Start with 10-20 conformers</strong> for initial exploration</li>
+<li><strong>Use higher energy thresholds</strong> (5-10 kcal/mol) for diverse conformers</li>
+<li><strong>Enable change labeling</strong> to identify flexible regions</li>
+<li><strong>Compare low-energy conformers</strong> for meaningful analysis</li>
+</ul>
+<h2 id="troubleshooting">🔧 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>"Invalid SMILES" Error</strong>:
+- Check for typos in the SMILES string
+- Ensure proper syntax (no spaces, correct parentheses)
+- Try using a different SMILES representation</p>
+<p><strong>Slow Performance</strong>:
+- Reduce number of conformers
+- Clear browser cache
+- Check system memory usage
+- Restart the application</p>
+<p><strong>Visualization Not Loading</strong>:
+- Refresh the browser page
+- Check browser compatibility (Chrome, Firefox, Safari, Edge)
+- Disable browser extensions that might interfere</p>
+<p><strong>3D Visualization Issues</strong>:
+- Update your browser to the latest version
+- Enable hardware acceleration
+- Try a different visualization style</p>
+<h3 id="getting-help">Getting Help</h3>
+<p>If you encounter issues:</p>
+<ol>
+<li><strong>Check the error message</strong> for specific guidance</li>
+<li><strong>Restart the application</strong> to clear temporary issues</li>
+<li><strong>Review the troubleshooting section</strong> above</li>
+<li><strong>Contact support</strong> with detailed error descriptions</li>
+</ol>
+<h2 id="support">📞 Support</h2>
+<p><strong>Developer</strong>: SHAH MD. JALAL UDDIN<br />
+<strong>Email</strong>: shahjalal2313@gmail.com<br />
+<strong>GitHub Issues</strong>: <a href="https://github.com/shahjalal2313/molecular-analyzer/issues">Report Bug</a></p>
+<hr />
+<p>🧬 <strong>Happy analyzing!</strong> We hope this guide helps you make the most of Molecular Analyzer's powerful features.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
