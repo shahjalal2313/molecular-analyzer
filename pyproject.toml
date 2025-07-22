@@ -1,0 +1,73 @@
+[project]
+name = "molecular-analyzer"
+version = "0.1.0"
+description = "A comprehensive molecular analysis and visualization toolkit for computational chemistry"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["chemistry", "molecular", "analysis", "visualization", "computational-chemistry", "rdkit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "rdkit>=2023.9.1",
+    "plotly>=5.17.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "jupyter>=1.0.0",
+    "ipywidgets>=8.0.0",
+    "streamlit>=1.28.0",
+    "scikit-learn>=1.3.0",
+    "scipy>=1.11.0",
+    "pillow>=10.0.0",
+    "requests>=2.31.0",
+    "pyyaml>=6.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/molecular-analyzer"
+Documentation = "https://github.com/yourusername/molecular-analyzer#readme"
+Repository = "https://github.com/yourusername/molecular-analyzer"
+Issues = "https://github.com/yourusername/molecular-analyzer/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+molecular_analyzer = ["py.typed"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

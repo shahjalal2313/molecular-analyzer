@@ -1,0 +1,22 @@
+streamlit.errors.StreamlitSetPageConfigMustBeFirstCommandError: set_page_config() can only be called once per app page, and must be called as the first Streamlit command in your script.
+
+For more information refer to the docs.
+
+Traceback:
+File "F:\Computational Chemistry Project\molecular-analyzer\streamlit_ui\app.py", line 104, in <module>
+    st.set_page_config(
+    ~~~~~~~~~~~~~~~~~~^
+        page_title="Molecular Analyzer v2",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        initial_sidebar_state="expanded"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+File "F:\Computational Chemistry Project\molecular-analyzer\molecular-analyzer-env\Lib\site-packages\streamlit\runtime\metrics_util.py", line 410, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+File "F:\Computational Chemistry Project\molecular-analyzer\molecular-analyzer-env\Lib\site-packages\streamlit\commands\page_config.py", line 273, in set_page_config
+    ctx.enqueue(msg)
+    ~~~~~~~~~~~^^^^^
+File "F:\Computational Chemistry Project\molecular-analyzer\molecular-analyzer-env\Lib\site-packages\streamlit\runtime\scriptrunner_utils\script_run_context.py", line 183, in enqueue
+    raise StreamlitSetPageConfigMustBeFirstCommandError()

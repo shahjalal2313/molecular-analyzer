@@ -1,0 +1,29 @@
+# Core computational chemistry libraries
+rdkit==2024.9.6
+numpy==2.2.3
+pandas==2.2.3
+scipy==1.15.1
+
+# Visualization libraries
+matplotlib==3.10.0
+seaborn==0.13.2
+plotly==6.0.0
+
+# Web application framework
+streamlit==1.44.1
+
+# Scientific computing and analysis
+scikit-learn==1.6.1
+sympy==1.13.3
+
+# Jupyter notebook support
+jupyter==1.1.1
+ipywidgets==8.1.6
+
+# File handling and utilities
+pillow==11.2.1
+requests==2.32.3
+pyyaml==6.0.2
+
+# Development and testing
+pytest>=7.0.0
