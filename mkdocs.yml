@@ -1,0 +1,10 @@
+site_name: Molecular Analyzer
+theme: material
+nav:
+    - Home: index.md
+    - 'User Guide': 'user-guide/README.md'
+    - 'Tutorials': 'tutorials/README.md'
+    - 'API Reference': 'api-reference/README.md'
+    - 'Development':
+        - 'Overview': 'development/README.md'
+        - 'Contributing': 'development/CONTRIBUTING.md'
