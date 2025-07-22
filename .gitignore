@@ -57,3 +57,5 @@ docs/generated/
 app/streamlit_app_old.py
 README_OLD.md
 nul
+# Claude-related files
+.claude/
