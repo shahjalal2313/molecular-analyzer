@@ -16,6 +16,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# === LOADING MESSAGE FOR FREE TIER HOSTING ===
+# Show professional loading notice for cold starts
+import time
+
+# Check if this might be a cold start (simple heuristic)
+# We'll show this message briefly to inform users about potential delays
+st.info("""
+🧪 **Molecular Analyzer - Free Tier Hosting**  
+⏱️ **First load**: May take 30-60 seconds as the application starts up  
+🚀 **Subsequent interactions**: Will be much faster once loaded  
+🔄 **Please note**: If the page reloads automatically, please re-enter the application again - this is normal during cold starts  
+☕ **Thank you for your patience** while we initialize the chemistry libraries!
+""")
+
+# Brief loading animation
+with st.spinner('🔬 Initializing molecular analysis tools...'):
+    time.sleep(2)  # Brief pause to show spinner and let user read the message
+
 import pandas as pd
 import numpy as np
 import sys
